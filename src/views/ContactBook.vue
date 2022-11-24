@@ -84,7 +84,7 @@ export default {
         filteredContacts() {
             if(!this.searchText) return this.contacts;
             return this.contacts.filter((_contact, index) => 
-                this.contactStrings[index].includes(this.searchText)
+                this.contactString[index].includes(this.searchText)
             );
         },
         activeContact() {
