@@ -3,7 +3,7 @@ export default {
     props: {
         modelValue: { type: String, default: "" },
     },
-    emits: ["submit", "update:moduleValue"],
+    emits: ["submit", "update:modelValue"],
     methods: {
         updateModelValue(e){
             this.$emit("update:modelValue", e.target.value);
